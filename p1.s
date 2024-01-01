@@ -90,6 +90,6 @@ loop2:
 
 welcome_msg: .asciz "Bienvenido al programa de lectura de archivos.\n"
 prompt: .asciz "Introduzca el nombre del archivo: "
-archivo: .space 100
+archivo: .word 0
 buffer: .space 100
 stack: .space 100
