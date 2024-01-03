@@ -2,12 +2,12 @@
 main:
 LDR R0, =filename @ open read file
 MOV R1, #0
-MOV R2, #-1      @ read all bytes
+MOV R2, #0      @ read all bytes
 MOV R7, #5
 SVC 0
 
 LDR R1, =bufferascii @ read file
-MOV R2, #-1      @ read all bytes
+MOV R2, #20      @ read all bytes
 MOV R7, #3
 svc 0
 
