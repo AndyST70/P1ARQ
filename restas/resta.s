@@ -7,7 +7,7 @@ start:
 	
 	push {R0, R1}
 	BL func_rec_division
-	MOV R0, R6
+	MOV R6, R0
 	pop {R0, R1}
 	
 	MOV R2, R1
@@ -24,7 +24,7 @@ func_rec_division:
 	
 tail:	
 	CMP R0, #0 
-	BLT end
+	BLE end
 	ADD R2, R2, #1
 	SUB R0, R0, R1
 	B tail
